@@ -230,7 +230,7 @@ void do_test(void)
 		v->map[0].start = mapping(v->plim_lower);
 		
 #ifdef USB_WAR
- /* We must not touch test below 0x500 memory beacuase
+ /* We must not touch test below 0x500 memory because
   * BIOS USB support clobbers location 0x410 and 0x4e0
   */
 	if ((ulong)v->map[0].start < 0x500) {
